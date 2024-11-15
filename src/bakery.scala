@@ -1,8 +1,6 @@
-package lx12.threads.bakery
+package lx12.bakery
 
 import scala.util.control.Breaks.break
-
-// sbtからの実行方法: runMain Bakery {loop,seq,conc}
 
 object Bakery {
   val NANO = 1.0E-9
@@ -71,9 +69,8 @@ object Bakery {
     println("今日はもう閉店です。")
   }
 
-//@main def run(arguments: Array[String]) = {
   @main def run(command: String) = {
-    println("sbtからの実行方法: runMain Bakery {loop,seq,conc}")
+    println("実行方法は sbt から: runMain lx12.bakery.run (look|conc|loop)")
     (command match {
       case "seq" => sequential _
       case "conc" => concurrent _

@@ -1,6 +1,6 @@
 /.*
 !/.gitignore
-/project/
+/project/*
 !/project/programming1.scala
 /target
 /*.class

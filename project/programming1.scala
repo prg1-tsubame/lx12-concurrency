@@ -12,7 +12,7 @@ object Programming1 {
     )
 
   val SCALA3 = Seq(
-      ThisBuild / scalaVersion := "3.2.2",                   // scalac コンパイラのバージョン
+      ThisBuild / scalaVersion := "3.3.4",                   // scalac コンパイラのバージョン
       Compile / scalaSource := baseDirectory.value / "src",  // Scala のソース置き場のディレクトリ
       scalacOptions := Seq(
         //"-explain",

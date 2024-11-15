@@ -100,7 +100,7 @@ object Par {
       case "sideeffect" => sideEffectX()
       case "assoc" => assocX()
       case "simple" => simple()
-      case "help" | _ => println("runMain lx12.pcollections.run (map|fold|sideeffect|assoc|simple|help)")
+      case "help" | _ => println("実行方法は sbt から: runMain lx12.pcollections.run (map|fold|sideeffect|assoc|simple|help)")
     }
   }
 }
