@@ -70,7 +70,7 @@ object Bakery {
   }
 
   @main def run(command: String) = {
-    println("実行方法は sbt から: runMain lx12.bakery.run (look|conc|loop)")
+    println("実行方法は sbt から: runMain lx12.bakery.run (loop|conc|loop)")
     (command match {
       case "seq" => sequential _
       case "conc" => concurrent _
